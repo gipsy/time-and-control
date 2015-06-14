@@ -1,0 +1,10 @@
+.m-button
+  +button(rem-calc(12), $primary-color, 3px !important)
+  &:hover
+    background-color: scale-color($primary-color, $lightness: -20%) !important
+    color: $white !important
+  &.large
+    +button(rem-calc(18.5), $primary-color, 3px !important)
+    padding-left: rem-calc(49)
+    padding-right: rem-calc(49)
+

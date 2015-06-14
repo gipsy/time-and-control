@@ -1,0 +1,20 @@
+=respond-to($media)
+  @if $media == smartphone
+    @media #{$small-up}
+      @content
+  @if $media == smartphone-only
+    @media #{$small-only}
+      @content
+  @if $media == tablet
+    @media #{$medium-up}
+      @content
+  @if $media == tablet-only
+    @media #{$medium-only}
+      @content
+  @if $media == mobile-only
+    @media #{$medium-up}
+      @content
+  @if $media == widescreen
+    @media #{$large-up}
+      @content
+

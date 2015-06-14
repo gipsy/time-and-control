@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Foundation
+    link(rel='stylesheet', href='./stylesheets/app.css')
+    script(src='http://i.cdn.turner.com/nba/nba/.element/media/2.0/teamsites/warriors/js/modernizr-2.8.3.js')
+
+  body
+    .m-top-bar--wrapper
+      .contain-to-grid
+        nav.top-bar.m-top-bar(data-topbar='', role='navigation')
+          ul.title-area
+            li.name
+              a.m-logo(href='#') H&C
+            // Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+            li.toggle-topbar.menu-icon
+              a(href='#')
+                span Menu
+          section.top-bar-section
+            // Right Nav Section
+            ul.right
+              li.active: a(href='#') Accueil
+              li: a(href='#') Produits
+              li: a(href='#') à propos
+              li: a(href='#') TARIFS
+              li: a.button.m-button(href='#') CONTACTEZ-NOUS
+
+    section.m-header--hero.text-center
+      .l-content--big.text-white
+        .row
+          h1.title-hero Contrôle et gestion de la sécurité
+          p Heure et Contrôle accompagne les plus grandes entreprises dans leur démarche d'optimisation de la sécurité
+            |</br>en répondant à leurs attentes concernant le contrôle de ronde, la protection du travailleur isolé
+            |</br>et la gestion électronique des clés.
+          a.m-button.large(href="#") Découvrez nos produits
+
+
+    script(src='js/bundle.js')
