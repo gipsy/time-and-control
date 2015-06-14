@@ -1,0 +1,34 @@
+@import "compass/typography/lists/horizontal-list"
+
+.m-products--list
+  +box-sizing(border-box)
+  +block-grid(5)
+  +horizontal-list
+
+.m-products--item
+  white-space: normal !important
+  position: relative
+  min-height: 400px
+  .l-box--small-bordered
+    +inline-block
+    height: 100%
+  p
+    font-size: rem-calc(13)
+    line-height: rem-calc(16)
+  &:last-child
+    margin-right: 0 !important
+  img
+    border: 1px solid $gainsboro
+
+.m-product--button
+  position: absolute
+  left: rem-calc(4)
+  right: rem-calc(4)
+  bottom: 0
+  background-color: $gainsboro
+  color: $aluminum
+  font-family: "Open Sans Condensed", sans-serif
+  font-weight: 700
+  font-size: rem-calc(13)
+  display: block
+  padding: 10px
