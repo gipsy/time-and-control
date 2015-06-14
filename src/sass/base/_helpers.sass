@@ -14,10 +14,16 @@
 .title-hero
   font-family: "Open Sans Condensed", sans-serif
   font-size: rem-calc(48)
+  font-weight: 600
 
 .title
   margin-bottom: rem-calc(30)
   font-weight: 600
+  &.subtitle
+    margin-bottom: 0
+    + p
+      font-size: rem-calc(13)
+      color: $steel
 
 h5.title
   font-family: "Open Sans Condensed", sans-serif
@@ -45,6 +51,9 @@ h5.title
 .bg-dark
   background-color: $jet
 
+.bg-orange
+  background-color: $primary-color
+
 .text-justifi
   text-align: text-justify
 
@@ -60,7 +69,7 @@ h5.title
 .text-semibold
   font-weight: 600
 
-.text-white *
+.text-white *, .text-white
   color: white
 
 .text-grey
@@ -69,3 +78,5 @@ h5.title
 .text-orange
   color: $primary-color
 
+.postfix
+  margin-left: 10px !important
