@@ -80,3 +80,17 @@ h5.title
 
 .postfix
   margin-left: 10px !important
+
+.img-shadow
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    bottom: -17px
+    left: 0
+    right: 0
+    background-image: url('../images/product-shadow.png')
+    background-size: 258px 17px
+    background-position: center center
+    height: 17px
+    width: 100%

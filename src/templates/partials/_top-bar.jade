@@ -1,0 +1,19 @@
+.m-top-bar--wrapper
+  .contain-to-grid
+    nav.top-bar.m-top-bar(data-topbar='', role='navigation')
+      ul.title-area
+        li.name
+          a.m-logo(href='#') H&C
+        // Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+        li.toggle-topbar.menu-icon
+          a(href='#')
+            span Menu
+      section.top-bar-section
+        // Right Nav Section
+        ul.right
+          li.active: a(href='#') Accueil
+          li: a(href='product.html') Produits
+          li: a(href='#') à propos
+          li: a(href='#') TARIFS
+          li: a.button.m-button(href='#') CONTACTEZ-NOUS
+
