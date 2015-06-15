@@ -4,6 +4,16 @@
   +box-sizing(border-box)
   +block-grid(5)
   +horizontal-list
+  +respond-to(tablet-only)
+    +block-grid(4)
+    .m-product--button
+      left: 10px
+      right: 10px
+  +respond-to(smartphone-only)
+    +block-grid(2)
+    .m-product--button
+      left: 10px
+      right: 10px
 
 .m-products--item
   white-space: normal !important
@@ -15,15 +25,20 @@
   p
     font-size: rem-calc(13)
     line-height: rem-calc(16)
+  &:first-child
+    .m-product--button
+      left: 0
   &:last-child
     margin-right: 0 !important
+    .m-product--button
+      right: 0
   img
     border: 1px solid $gainsboro
 
 .m-product--button
   position: absolute
-  left: rem-calc(4)
-  right: rem-calc(4)
+  left: 4px
+  right: 4px
   bottom: 0
   background-color: $gainsboro
   color: $aluminum
@@ -32,3 +47,23 @@
   font-size: rem-calc(13)
   display: block
   padding: 10px
+
+.m-product
+  background-image: url('../images/bg-product.jpg')
+  background-size: cover
+  border-bottom: 1px solid  $gainsboro
+  h2
+    font-size: rem-calc(36)
+    border-bottom: 1px solid $iron
+    padding-bottom: rem-calc(20)
+    margin-bottom: rem-calc(20)
+  p
+    font-size: rem-calc(15)
+    padding-bottom: 0
+    margin-bottom: 0
+  &.one
+    background-image: url('../images/bg-product-1.jpg')
+  &.two
+    background-image: url('../images/bg-product-2.jpg')
+  &.three
+    background-image: url('../images/bg-product-3.jpg')
