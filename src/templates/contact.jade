@@ -1,0 +1,35 @@
+doctype html
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+head
+  include partials/_head
+
+  body
+    include partials/_top-bar
+
+    .row
+      .l-content.no-padding-bottom
+        h4.title.text-center Contactez-nous
+        p.text-center Pour tout renseignement, vous pouvez contacter Heure et Contrôle au 01 43 14 87 77
+         |ou par email en remplissant le formulaire ci-dessous :
+
+        .l-content--small.no-padding-bottom
+          .large-5.medium-5.large-centered.medium-centered.columns
+            form
+              input(type="text" placeholder="Nom *")
+              input(type="text" placeholder="Société")
+              input(type="text" placeholder="Adresse")
+              input(type="text" placeholder="Téléphone")
+              input(type="text" placeholder="Email *")
+              textarea(placeholder="Message *")
+              .m-actions.centered
+                button.m-button.yellow(type="submit") envoyer
+
+            br
+            p.text-smallest * Les champs marqués d’une astérisque sont obligatoires.
+
+    include partials/_footer
+
+    script(src='js/bundle.js')
