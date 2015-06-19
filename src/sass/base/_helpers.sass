@@ -54,7 +54,7 @@ h5.title
 .bg-orange
   background-color: $primary-color
 
-.text-justifi
+.text-justify
   text-align: text-justify
 
 .text-uppercase
@@ -62,6 +62,9 @@ h5.title
 
 .text-smaller
   font-size: rem-calc(14)
+
+.text-smallest
+  font-size: rem-calc(13)
 
 .text-bold
   font-weight: 700
@@ -94,3 +97,16 @@ h5.title
     background-position: center center
     height: 17px
     width: 100%
+
+.list-style-dash
+  +no-bullets
+  li
+    text-indent: -5px
+    margin-left: 10px
+    &:before
+      content: "—"
+      position: relative
+      left: -5px
+
+.border-top
+  border-top: 1px solid $gainsboro

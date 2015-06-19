@@ -1,0 +1,82 @@
+doctype html
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+head
+  include partials/_head
+
+  body
+    include partials/_top-bar
+
+    section
+      .l-content
+        .row
+          h4.title.text-grey.text-center VigiClé
+          p.text-grey.text-center Gestion automatique 24H/24 des sorties et des entrées des clés ainsi que du nom de leurs utilisateurs.
+
+    section.bg-silver
+      .row
+        .large-8.medium-8.large-centered.medium-centered.columns
+          .l-content--small
+            .m-video(class='[vimeo, widescreen]')
+              iframe(width='560', height='315', src='http://www.youtube.com/embed/wN3gueLT0D8?showinfo=0', frameborder='0', allowfullscreen='')
+
+    section
+      .l-content
+        .row
+          p Le <span class="text-bold">VigiClé</span> est le 1er système de sécurité breveté, de contrôle et de gestion électronique de clés. Il assure la gestion de vos clés avec le maximum de sûreté. Il enregistre l'historique de chaque clé et de chaque utilisateur.
+          ul.list-style-dash
+            p.text-bold.no-margin-bottom Les points forts de notre gestionnaire de clés :
+            li Contrôler la prise et la remise de clés.
+            li Eliminer les registres avec main courante.
+            li Récupérer en temps réel les mouvements effectués.
+            li Détecter des alarmes sur les anomalies : clés remises en retard, porte forcée…
+
+          p <span class="text-bold">Une ou plusieurs clés sont verrouillées</span> sur le porte-clés.
+          p Grâce à son système unique de <span class="text-bold">remise aléatoire des clés</span>, les utilisateurs n'ont plus à se souvenir de l'emplacement de leurs clés, le VigiClé le fait <span class="text-bold">automatiquement</span> pour eux.
+          p Le VigiClé fonctionne avec le <span class="text-bold">logiciel Key Pro</span>, spécialement développé pour <span class="text-bold">améliorer ses performances</span>. Ce logiciel permet de générer les <span class="text-bold">rapports de tous les mouvements de clés</span>, par heure, par date et par utilisateur.
+
+          .l-content--small
+            .large-3.medium-3.small-3.columns
+              .img-shadow
+                img(src="images/content/product-item-details-1.jpg")
+              br
+              h5.text-bold Utilisation en réseau
+              p.text-smallest La gestion en réseau permet de piloter un ou plusieurs Vigiclé sur un même site ou sur des sites distants.
+            .large-3.medium-3.small-3.columns
+              .img-shadow
+                img(src="images/content/product-item-details-2.jpg")
+              br
+              h5.text-bold Accessoires
+              p.text-smallest Les anneaux de sécurité ont été conçus afin de sécuriser les trousseaux de clés importants. Il est l'accessoire idéal pour remplacer les vieux anneaux « soudés » et peu fiables. Disponible en 7 coloris.
+            .large-3.medium-3.small-3.columns
+              .img-shadow
+                img(src="images/content/product-item-details-3.jpg")
+              br
+              h5.text-bold Gamme de VigiClé
+              p.text-smallest La gamme de VigiClé comporte plusieurs modèles pour gérer, soit des clés, soit des casiers soit des badges en une ou plusieurs 
+            .large-3.medium-3.small-3.columns
+              .img-shadow
+                img(src="images/content/product-item-details-4.jpg")
+              br
+              h5.text-bold VigiCut
+              p.text-smallest Le vigicut, notre outil de clipsage est doté des fonctions suivantes :
+              ul.list-style-dash.text-smallest
+                li Ferme le porte clé.
+                li Maintient le porte clé.
+                li Supprime l’embout du cavalier.
+                li Coupe l’anneau pour trousseaux.
+                li Agrandit l’anneau.
+                li Ferme l’anneau pour trousseaux.
+
+        .row
+          .m-actions.centered.top-space
+            a.m-button.grey.in-row(href="#") Télécharger le dossier technique
+            a.m-button.yellow.in-row(href="#") demande d’informationS
+
+    include partials/_newsletter
+
+    include partials/_footer
+
+    script(src='js/bundle.js')

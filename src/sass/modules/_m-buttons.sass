@@ -2,6 +2,11 @@
   +button(rem-calc(10), $primary-color, 3px !important)
   text-transform: uppercase
   font-size: rem-calc(12)
+  &.postfix
+    +respond-to(smartphone-only)
+      margin-left: 0 !important
+    +respond-to(tablet-only)
+      margin-left: 0 !important
   &:hover
     background-color: scale-color($primary-color, $lightness: -20%) !important
     color: $white !important
@@ -10,9 +15,17 @@
     padding-left: rem-calc(49)
     padding-right: rem-calc(49)
     font-size: rem-calc(18)
+  &.grey
+    background-color: #dad9d7
+    color: #4a4a4a
   &.yellow
     background-color: #ffd000
     color: #4a4a4a
   &.radius
     border-radius: 30px !important
+  &.in-row
+    margin: 0 10px
+    +respond-to(smartphone-only)
+      width: 90%
+      margin: 10px 0
 
