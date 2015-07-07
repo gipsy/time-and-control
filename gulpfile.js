@@ -11,6 +11,10 @@ var watch        = require('gulp-watch');
 var minifycss    = require('gulp-minify-css');
 var uglify       = require('gulp-uglify');
 var streamify    = require('gulp-streamify');
+var plumber      = require('gulp-plumber');
+var changed      = require('gulp-changed');
+var imagemin     = require('gulp-imagemin');
+var notify       = require("gulp-notify");
 var prod         = gutil.env.prod;
 
 var onError = function(err) {
@@ -60,6 +64,21 @@ gulp.task('sass', function() {
     .pipe(browserSync.stream());
 });
 
+// Compress and minify images to reduce their file size
+gulp.task('images', function() {
+    var imgSrc = './src/images/**/*',
+        imgDst = 'build/images';
+ 
+    return gulp.src(imgSrc)
+        .pipe(plumber({
+            errorHandler: onError
+        }))
+        .pipe(changed(imgDst))
+        .pipe(imagemin())
+        .pipe(gulp.dest(imgDst))
+        .pipe(notify({ message: 'Images task complete' }));
+});
+
 // browser sync server for live reload
 gulp.task('serve', function() {
   browserSync.init({
@@ -73,4 +92,4 @@ gulp.task('serve', function() {
 });
 
 // use gulp-sequence to finish building html, sass and js before first page load
-gulp.task('default', gulpSequence(['html', 'sass', 'js'], 'serve'));
+gulp.task('default', gulpSequence(['html', 'sass', 'js', 'images'], 'serve'));
